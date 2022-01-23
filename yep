@@ -1,0 +1,70 @@
+import { BotConfig } from './structures/types'; 
+
+export const config: BotConfig = {
+    groupId: 2889759,
+    slashCommands: true,
+    legacyCommands: {
+        enabled: true,
+        prefixes: ['r!'],
+    },
+    permissions: {
+        all: ['928538853478895636'],
+        ranking: [''],
+        users: [''],
+        shout: ['928540649345646634'],
+        join: [''],
+        signal: [''],
+        admin: [''],
+    },
+    logChannels: {
+        actions: '928544537884905494',
+        shout: '928544727555526656',
+    },
+    database: {
+        enabled: true,
+        type: 'mongodb',
+    },
+    api: true,
+    maximumRank: 251,
+    verificationChecks: true,
+    firedRank: 1,
+    suspendedRank: 3,
+    recordManualActions: true,
+    memberCount: {
+        enabled: true,
+        channelId: '934517274772136046',
+        milestone: 100,
+        onlyMilestones: false,
+    },
+    xpSystem: {
+        enabled: true,
+        autoRankup: true,
+        roles:[
+    {
+        rank: 241,
+        xp: 60,
+    },
+    {
+        rank: 242,
+        xp: 90,
+    },
+    {
+        rank: 243,
+        xp: 180,
+    }
+]
+    antiAbuse: {
+        enabled: true,
+        clearDuration: 3 * 60,
+        threshold: 30,
+        demotionRank: 3,
+        bypassRoleId: '',
+    },
+    activity: {
+        enabled: true,
+        type: 'WATCHING',
+        value: 'Yummies Cafe,
+    },
+    status: 'dnd',
+    deleteWallURLs: true,
+}
