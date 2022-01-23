@@ -53,6 +53,7 @@ export const config: BotConfig = {
         xp: 180,
     }
 ]
+    },
     antiAbuse: {
         enabled: true,
         clearDuration: 3 * 60,
